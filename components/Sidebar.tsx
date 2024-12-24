@@ -4,6 +4,7 @@ import React from "react";
 import Logo from "./Logo";
 import { navbarData } from "@/constants";
 import Link from "next/link";
+import SocialLinks from "./SocialLinks";
 
 interface Props {
   isOpen: boolean;
@@ -16,7 +17,7 @@ const Sidebar: React.FC<Props> = ({ isOpen, onClose, pathname }) => {
   return (
     <div
       ref={sidebarRef}
-      className={`fixed insert-y-0 right-0 z-50 min-w-72 max-w-96 bg-bodyColor border-l border-l-hoverColor/50 shadow-xl transform ${
+      className={`fixed inset-y-0 right-0 z-50 min-w-72 max-w-96 bg-bodyColor border-l border-l-hoverColor/50 shadow-xl transform ${
         isOpen ? "translate-x-0" : "translate-x-full"
       } transition-transform duration-300 ease-in-out`}
     >
@@ -35,6 +36,7 @@ const Sidebar: React.FC<Props> = ({ isOpen, onClose, pathname }) => {
               </Link>
             ))}
             <Link href={'/resume.pdf'} target="_blank" rel="noopener noreferer" className="text-sm bg-lightSky/10 px-4 py-2 rounded-md border border-hoverColor/10 hover:border-hoverColor hover:bg-hoverColor hover:text-black hoverEffect" onClick={onClose}>Hire me</Link>
+            <SocialLinks/>
         </nav>
     </div>
   );

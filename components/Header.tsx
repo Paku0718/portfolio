@@ -26,7 +26,7 @@ const Header = () => {
               ))}
               <Link href={'/resume.pdf'} target="_blank" rel="noopener noreferer" className="text-sm bg-lightSky/10 px-4 py-2 rounded-md border border-hoverColor/10 hover:border-hoverColor hover:bg-hoverColor hover:text-black hoverEffect">Hire me</Link>
             </div>
-            <button aria-l abel="Toggle menu" onClick={()=>setIsSidebarOpen(!isSidebarOpen)} className="inline-flex md:hidden relative hover:text-hoverColor hoverEffect"><Menu/></button>
+            <button aria-label="Toggle menu" onClick={()=>setIsSidebarOpen(!isSidebarOpen)} className="inline-flex md:hidden relative hover:text-hoverColor hoverEffect"><Menu/></button>
         </Container>
         <div className="md:hidden">
           <Sidebar isOpen={isSidebarOpen} onClose={()=>setIsSidebarOpen(false)} pathname={pathname}/>
