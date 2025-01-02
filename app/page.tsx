@@ -1,4 +1,5 @@
 import Container from "@/components/Container";
+import HomeDescription from "@/components/HomeDescription";
 import Photo from "@/components/Photo";
 import SocialLinks from "@/components/SocialLinks";
 import Statistics from "@/components/Statistics";
@@ -21,12 +22,11 @@ export default function Home() {
               Paras Kuranjekar
             </h1>
           </div>
-          <p className="w-auto md:max-w-[500px] text-white/50 font-thin leading-6">
-            I design and build scalable software solutions, develop robust
-            backend systems, solve complex problems, and create intuitive user
-            experiences. Passionate about turning ideas into functional and
-            impactful applications using modern technologies.
-          </p>
+          <div className="w-full h-[170px] md:h-[140px] relative">
+            <div className="absolute top-0 left-0 w-full h-full">
+          <HomeDescription/>
+            </div>
+          </div>
           <Button className="bg-transparent rounded-full border border-lightSky/50 text-lightSky hover:bg-hoverColor hover:text-black hoverEffect h-11">
             Download CV
             <Download />

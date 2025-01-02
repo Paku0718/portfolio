@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
+import PageTransition from "@/components/PageTransition";
+import StairTransition from "@/components/StairTransition";
 
 
 export const metadata: Metadata = {
@@ -26,7 +28,8 @@ export default function RootLayout({
         className={`${raleway.variable} antialiased`}
       >
         <Header/>
-        {children}
+        <StairTransition/>
+        <PageTransition>{children}</PageTransition>
 
       </body>
     </html>
