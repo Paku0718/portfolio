@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="bg-bodyColor text-white/80">
       <Container className="py-10 grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div className="flex flex-col items-center md:items-start gap-5 md:gap-7 text-center md:text-start">
+        <div className="flex flex-col items-center md:items-start gap-5 md:gap-7 text-center md:text-start order-2 md:order-none">
           <div>
             <h3 className="font-semibold tracking-wider mb-1">
               Software Engineer
