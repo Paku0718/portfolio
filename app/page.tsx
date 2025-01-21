@@ -13,7 +13,7 @@ export default function Home() {
         <div className="flex flex-col items-center md:items-start gap-5 md:gap-7 text-center md:text-start order-2 md:order-none">
           <div>
             <h3 className="font-semibold tracking-wider mb-1">
-              Software Engineer
+              Web Developer
             </h3>
             <h2 className="text-3xl md:text-5xl mb-2 text-white">
               Hello I&apos;m
